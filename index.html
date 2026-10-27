@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoopAI | Cooperative & Employment Ecosystem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-icon">C</span><div><h1>CoopAI</h1><p>Smart Cooperative & Employment System</p></div></div>
+    <span class="badge">AI-enabled prototype</span>
+  </header>
+  <main class="container">
+    <section class="welcome">
+      <div><p class="eyebrow">COOPERATIVE CAPACITY BUILDING</p><h2>One platform. Better operations.<br><span>More opportunities.</span></h2>
+      <p class="intro">Manage members, track skill development, and connect people with suitable jobs from one simple dashboard.</p></div>
+      <div class="welcome-mark">Coop<span>+</span></div>
+    </section>
+    <section class="stats" aria-label="Summary">
+      <article class="stat"><p>Total Members</p><strong id="memberCount">0</strong><small>Registered cooperative members</small></article>
+      <article class="stat"><p>Training Courses</p><strong id="courseCount">0</strong><small>Available skill programmes</small></article>
+      <article class="stat"><p>Job Opportunities</p><strong id="jobCount">0</strong><small>Open roles listed</small></article>
+      <article class="stat"><p>Suggested Matches</p><strong id="matchCount">0</strong><small>Based on member skills</small></article>
+    </section>
+    <section class="grid">
+      <article class="panel">
+        <div class="panel-head"><div><p class="eyebrow">MEMBER DIRECTORY</p><h3>Cooperative Members</h3></div><button id="addDemo" class="button secondary">Add demo member</button></div>
+        <div class="table-wrap"><table><thead><tr><th>Name</th><th>Skills</th><th>Training</th><th>Status</th></tr></thead><tbody id="memberRows"></tbody></table></div>
+      </article>
+      <article class="panel">
+        <div class="panel-head"><div><p class="eyebrow">SKILL DEVELOPMENT</p><h3>Training Programmes</h3></div></div>
+        <div id="courses" class="course-list"></div>
+      </article>
+      <article class="panel wide">
+        <div class="panel-head"><div><p class="eyebrow">EMPLOYMENT ECOSYSTEM</p><h3>Job Matching</h3></div><button id="refreshMatches" class="button">Find matches</button></div>
+        <p class="muted">Prototype recommendations use simple skill-keyword matching. Review all suggestions before making hiring decisions.</p>
+        <div id="jobs" class="job-list"></div>
+      </article>
+    </section>
+    <section class="notice"><strong>Prototype note</strong><p>This is a front-end demonstration with sample data. It does not use a real AI model or store data on a server. Do not enter sensitive personal information.</p></section>
+  </main>
+  <footer>CoopAI · Student project prototype · SDG 4, SDG 8 and SDG 9</footer>
+  <script src="app.js"></script>
+</body>
+</html>
